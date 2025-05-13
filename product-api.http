@@ -1,0 +1,30 @@
+### Create new product
+POST http://localhost:8080/
+Content-Type: application/json
+
+{
+  "name": "Laptop",
+  "description": "Powerful development laptop",
+  "price": 4500.0,
+  "quantity": 10
+}
+
+### Get all products
+GET http://localhost:8080/
+
+### Get product by ID
+GET http://localhost:8080/2
+
+### Update product
+PUT http://localhost:8080/1
+Content-Type: application/json
+
+{
+  "name": "Upgraded Laptop",
+  "description": "Powerful development laptop with enhanced memory",
+  "price": 5000.0,
+  "quantity": 8
+}
+
+### Delete product
+DELETE http://localhost:8080/2
